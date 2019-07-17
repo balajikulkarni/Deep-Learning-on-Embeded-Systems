@@ -70,10 +70,10 @@ def build_model():
 model = build_model()
 model.summary()
 
-model.load_weights('MNIST-TSAI-3A.h5')
+model.load_weights('MNIST_WEIGHTS.h5')
 
 #Running Inference
-img = imread("img_1.jpg")
+img = imread("two.jpg")
 
 # resize to 28 x 28
 imresize = resize(img,(28,28), mode='constant')
